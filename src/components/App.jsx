@@ -3,7 +3,7 @@ import Header from "./Header";
 import Welcome from "./Welcome";
 import AboutMe from "./AboutMe";
 import StarredRepos from "./StarredRepos";
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route } from "react-router-dom";
 
 function App(){
   return (
