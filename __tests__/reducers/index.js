@@ -8,7 +8,7 @@ describe("Karaoke App", () => {
 
   describe("Songs By Title Reducer", () => {
     const songData = defaultState.songsById[defaultState.selectedSong];
-    it('should return default state', () => {
+    it("should return default state", () => {
       expect(songsById(defaultState.songsById, { type: null }))
       .toEqual(defaultState.songsById);
     });
@@ -32,12 +32,12 @@ describe("Karaoke App", () => {
       selectedSong: 1
     });
 
-    it('should return default state', () => {
+    it("should return default state", () => {
       expect(selectedSong(initialState, { type: null }))
       .toEqual(initialState);
     });
 
-    it('should change selectedSong', () => {
+    it("should change selectedSong", () => {
       expect(selectedSong(initialState, actions.selectSong(defaultState.selectedSong)))
       .toEqual(defaultState);
     });

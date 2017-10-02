@@ -1,11 +1,10 @@
 import * as types from "./../constants/ActionTypes";
 import v4 from "uuid/v4";
 
-export function fetchRepo(dispatch) {
+export function fetchRepo(repo) {
   return function (dispatch) {
     const repoId = v4();
     dispatch(requestRepo(repoId));
-    console.log("hi");
     return fetch("https://api.github.com/users/larryjtaylor/starred")
     .then(
       function(response){

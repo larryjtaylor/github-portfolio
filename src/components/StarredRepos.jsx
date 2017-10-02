@@ -1,5 +1,5 @@
 import React from "react";
-import { fetchJoke }  from "./../actions";
+import { fetchRepo}  from "./../actions";
 import { connect } from "react-redux";
 
 const StarredRepos = ({ dispatch, name, description, url }) => {
@@ -9,7 +9,7 @@ const StarredRepos = ({ dispatch, name, description, url }) => {
       <h2>Project Name: {name}</h2>
       <h3>Description: {description}</h3>
       <p>View repo: {url}</p><a href=""></a>
-      <button onClick={() => {dispatch(fetchRepo())}}>View next</button>
+      <button onClick={() => {dispatch(fetchRepo());}}>View next</button>
     </div>
   );
 };
